@@ -15,6 +15,26 @@
     font-family: 'Roboto', sans-serif;
 }
 
+h1,
+h2,
+ul,
+p {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* CONTAINER */
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 1px solid tomato;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 /* Header */
 
 .header {
@@ -97,46 +117,48 @@
     color: var(--accent-color);
 }
 
-/* Hero */
+/* Герой */
 
 .hero {
     background-color: var(--footer-background-color);
+    text-align: center;
 }
 
 .hero-title {
+    margin-bottom: 30px;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-
     color: var(--header-background-color);
 }
 
 .primary-button {
-    background-color: var(--accent-color);
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 216px;
 
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-
-    display: flex;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-
     color: var(--header-background-color);
     border: transparent;
     cursor: pointer;
 }
 
-/* Benefits */
+/* Переваги */
 
 .benefit-head {
     color: transparent;
+    height: 0;
 }
 
 .benefits-list {
@@ -144,24 +166,27 @@
 }
 
 .benefit-title {
+    width: 270px;
+    margin-bottom: 10px;
+    margin-top: 0;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
-
     text-transform: uppercase;
-
     color: var(--headlines);
 }
 
 .benefit-description {
+    width: 270px;
+
     font-size: 14px;
     line-height: 1.71;
-
     letter-spacing: 0.03em;
 }
 
-/* Tasks */
+/* Чим ми займаємося */
 
 .tasks-head {
     font-weight: 700;
@@ -178,7 +203,7 @@
     list-style-type: none;
 }
 
-/* Team */
+/* Наша команда */
 
 .team {
     background-color: var(--background-secondary-color);
@@ -216,7 +241,7 @@
     letter-spacing: 0.03em;
 }
 
-/* Footer */
+/* Футер */
 
 .footer {
     background-color: var(--footer-background-color);
