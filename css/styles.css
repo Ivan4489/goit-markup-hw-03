@@ -7,10 +7,13 @@
     --footer-background-color: #2F303A;
     --header-background-color: #FFFFFF;
     --logo-black-color: #000000;
+    --portfolio-border:#EEEEEE;
+    --header-border: #ECECEC;
 }
 
 .page {
-    background-color: var(--background-primary-color);
+    /* background-color: var(--background-primary-color); */
+    background-color: var(--header-background-color);
     color: var(--primary-text-color);
     font-family: 'Roboto', sans-serif;
 }
@@ -27,18 +30,43 @@ p {
 /* CONTAINER */
 
 .container {
+    display: flex;
+
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     outline: 1px solid tomato;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 94px;
+}
+
+.site-nav-list {
+    display: flex;
+    outline: 1px solid teal;
+}
+
+.site-nav-list .item + .item {
+    /* outline: 1px solid teal; */
+    margin-left: 50px;
+}
+
+header > .container,
+.team > .container,
+footer > .container {
+    margin-bottom: 0px;
+}
+
+footer > .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 /* Header */
 
 .header {
     background-color: var(--header-background-color);
+    border-bottom: 1px solid var(--header-border);
 }
 
 .logo {
@@ -122,6 +150,7 @@ p {
 .hero {
     background-color: var(--footer-background-color);
     text-align: center;
+    margin-bottom: 94px;
 }
 
 .hero-title {
@@ -210,27 +239,36 @@ p {
 }
 
 .team-head {
+    margin-bottom: 50px;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-
     letter-spacing: 0.03em;
-
     color: var(--headlines);
 }
 
-.emploee-list {
+.employee-list {
     list-style-type: none;
+}
+
+.employee-card {
+    width: 270px;
+    height: 368px;
+    border-radius: 0px 0px 4px 4px;
+
+    background-color: var(--header-background-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    outline: 1px solid green;
+    text-align: center;
 }
 
 .employee-name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-
     letter-spacing: 0.03em;
-
     color: var(--headlines);
 }
 
@@ -244,29 +282,33 @@ p {
 /* Футер */
 
 .footer {
+    /* padding-top: 60px; */
+
     background-color: var(--footer-background-color);
 }
 
 .logo-footer {
+    display: inline-block;
+    margin-bottom: 20px;
+
+
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-
     letter-spacing: 0.03em;
-
     color: var(--header-background-color);
     text-decoration: none;    
 }
 
 .address {
+    margin-bottom: 9px;
+
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-
     letter-spacing: 0.03em;
-
     color: var(--header-background-color);
 }
 
@@ -274,27 +316,39 @@ p {
     list-style-type: none;
 }
 
+/* .contacts-footer-list:not(the-last-child) {
+    margin-bottom: 9px;
+} */
+
 .footer-contact {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-
     letter-spacing: 0.03em;
-
     color: rgba(255, 255, 255, 0.6);
-
     text-decoration: none;
 }
+
+.contact-item:not(:last-child){
+    /* display: inline-block; */
+    margin-bottom: 9px;
+}
+
 
 .footer-contact:hover,
 .footer-contact:focus {
     color: var(--accent-color);
 }
 
-/* Main Portfolio */
+/* Портфоліо */
+
+.portfolio > .container {
+    margin-bottom: 0;
+}
 
 .filter-list {
+    margin-bottom: 34px;
     list-style-type: none;
 }
 
@@ -321,28 +375,44 @@ p {
 
 .portfolio-head {
     color: transparent;
+    height: 0;
 }
 
 .portfolio-list {
     list-style-type: none;
 }
 
+.project-card {
+    width: 370px;
+    height: 404px;
+    border-radius: 0px 0px 4px 4px;
+    padding: 0 24px 20px 24px;
+
+    background-color: var(--header-background-color);
+    border: 1px solid var(--portfolio-border);
+    
+}
+
+.project-card > img {
+    margin-left: -25px;
+}
+
 .project-name {
+    margin-top: 20px;
+
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
-
     letter-spacing: 0.06em;
-
     color: var(--headlines);
 }
 
 .project-description {
+    margin-top: 4px;
+
     font-size: 16px;
     line-height: 1.88;
-
     letter-spacing: 0.03em;
-
     color: var(--primary-text-color);
     }
 
@@ -354,4 +424,5 @@ p {
 /* footer-background-color: #2F303A */
 /* header-background-color: #FFFFFF */
 /* logo-black-color:#000000 */
+/* portfolio-border:#EEEEEE */
 
