@@ -30,8 +30,6 @@ p {
 /* CONTAINER */
 
 .container {
-    display: flex;
-
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -39,16 +37,6 @@ p {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 94px;
-}
-
-.site-nav-list {
-    display: flex;
-    outline: 1px solid teal;
-}
-
-.site-nav-list .item + .item {
-    /* outline: 1px solid teal; */
-    margin-left: 50px;
 }
 
 header > .container,
@@ -98,7 +86,7 @@ footer > .container {
 }
 
 .link {
-    color: var(--headlines);
+    color: var(--accent-color);
     text-decoration: none;
 }
 
