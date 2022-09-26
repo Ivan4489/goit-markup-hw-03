@@ -33,10 +33,11 @@ p {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 1px solid tomato;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 94px;
+
+    /* outline: 1px solid tomato; */
 }
 
 .header > .container,
@@ -85,10 +86,10 @@ p {
 
 .site-nav-list {
     display: flex;
-    outline: 1px solid teal;
     margin-left: 93px;
 
     list-style-type: none;
+    /* outline: 1px solid teal; */
 }
 
 .site-nav {
@@ -123,10 +124,10 @@ p {
 
 .contacts-list {
     display: flex;
-    outline: 1px solid teal;
     margin-left: 344px;
         
     list-style-type: none; 
+    /* outline: 1px solid teal; */
 }
 
 .contacts-list .item + .item{
@@ -281,8 +282,8 @@ p {
 
     background-color: var(--header-background-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    outline: 1px solid green;
     text-align: center;
+    /* outline: 1px solid green; */
 }
 
 .employee-name {
@@ -379,7 +380,7 @@ p {
     margin-bottom: 34px;
 
     list-style-type: none;
-    outline: 1px solid teal;
+    /* outline: 1px solid teal; */
 }
 
 .filter-list .item + .item {
@@ -387,7 +388,7 @@ p {
 }
 
 .filter-list .item {
-    outline: 1px solid teal;
+    /* outline: 1px solid teal; */
 }
 
 .secondary-button {
@@ -425,7 +426,7 @@ p {
     justify-content: space-between;
 
     list-style-type: none;
-    outline: 1px solid teal;
+    /* outline: 1px solid teal; */
 }
 
 .project-card {
