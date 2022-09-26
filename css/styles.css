@@ -228,6 +228,8 @@ p {
 /* Чим ми займаємося */
 
 .tasks-head {
+    margin-bottom: 50px;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -237,6 +239,9 @@ p {
 }
 
 .tasks-list {
+    display: flex;
+    justify-content: space-between;
+
     list-style-type: none;
 }
 
