@@ -368,18 +368,18 @@ p {
     display: flex;
     flex-direction: column;
     margin-top: 94px;
-
-    margin-bottom: 0;
+    margin-bottom: 94px;
 }
 
 .filter-list {
     display: flex;
     margin-bottom: 34px;
     justify-content: center;
-    outline: 1px solid teal;
     padding-bottom: 16px;
+    margin-bottom: 34px;
 
     list-style-type: none;
+    outline: 1px solid teal;
 }
 
 .filter-list .item + .item {
@@ -420,7 +420,12 @@ p {
 }
 
 .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
     list-style-type: none;
+    outline: 1px solid teal;
 }
 
 .project-card {
