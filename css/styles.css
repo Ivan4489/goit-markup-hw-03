@@ -251,6 +251,11 @@ p {
     background-color: var(--background-secondary-color);
 }
 
+.team > .container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .team-head {
     margin-bottom: 50px;
 
@@ -263,6 +268,9 @@ p {
 }
 
 .employee-list {
+    display: flex;
+    justify-content: space-between;
+
     list-style-type: none;
 }
 
