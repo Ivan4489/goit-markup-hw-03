@@ -201,6 +201,10 @@ p {
 
 /* Переваги */
 
+.benefits {
+    padding-bottom: 0px;
+}
+
 .benefit-head {
     color: transparent;
     height: 0;
@@ -431,7 +435,7 @@ p {
 }
 
 .portfolio-list > .item {
-    /* width: 370px; */
+    width: 370px;
     flex-basis: calc(100% / 3 - 30px);
     height: 404px;
     padding: 0 24px 20px 24px;
