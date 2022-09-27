@@ -135,7 +135,7 @@ img {
 
 .contacts-list {
     display: flex;
-    margin-left: 344px;
+    margin-left: auto;
         
     list-style-type: none; 
 }
