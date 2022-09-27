@@ -20,11 +20,19 @@
 
 h1,
 h2,
+h3,
 ul,
 p {
     margin: 0;
     padding-left: 0;
     padding-right: 0;
+}
+
+/* SECTION */
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 /* CONTAINER */
@@ -35,7 +43,6 @@ p {
     padding-right: 15px;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 94px;
 
     /* outline: 1px solid tomato; */
 }
@@ -160,7 +167,6 @@ p {
 .hero {
     background-color: var(--footer-background-color);
     text-align: center;
-    margin-bottom: 94px;
 }
 
 .hero-title {
@@ -250,11 +256,6 @@ p {
 
 .team {
     background-color: var(--background-secondary-color);
-}
-
-.team > .container {
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 
 .team-head {
@@ -368,8 +369,6 @@ p {
 .portfolio > .container {
     display: flex;
     flex-direction: column;
-    margin-top: 94px;
-    margin-bottom: 94px;
 }
 
 .filter-list {
@@ -423,24 +422,29 @@ p {
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    margin-left: -30px;
+    margin-top: -30px;
+    /* justify-content: space-between; */
 
     list-style-type: none;
-    /* outline: 1px solid teal; */
+    outline: 1px solid teal;
 }
 
-.project-card {
-    width: 370px;
+.portfolio-list > .item {
+    /* width: 370px; */
+    flex-basis: calc(100% / 3 - 30px);
     height: 404px;
-    border-radius: 0px 0px 4px 4px;
     padding: 0 24px 20px 24px;
+    margin-left: 30px;
+    margin-top: 30px;
 
     background-color: var(--header-background-color);
     border: 1px solid var(--portfolio-border);
-    
+    border-radius: 0px 0px 4px 4px;
+    outline: 1px solid teal;
 }
 
-.project-card > img {
+.portfolio-list > .item > .item-img {
     margin-left: -25px;
 }
 
