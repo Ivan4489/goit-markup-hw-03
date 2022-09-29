@@ -52,14 +52,8 @@ img {
 }
 
 .header > .container,
-.team > .container,
-.footer > .container {
+.team > .container {
     margin-bottom: 0px;
-}
-
-.footer > .container {
-    padding-top: 60px;
-    padding-bottom: 60px;
 }
 
 .header > .container {
@@ -169,10 +163,15 @@ img {
 .hero {
     background-color: var(--footer-background-color);
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-title {
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 696px;
 
     font-weight: 900;
     font-size: 44px;
@@ -317,7 +316,14 @@ img {
 /* Футер */
 
 .footer {
-    /* padding-top: 60px; */
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
 
     background-color: var(--footer-background-color);
 }
@@ -385,9 +391,7 @@ img {
 
 .filter-list {
     display: flex;
-    margin-bottom: 34px;
     justify-content: center;
-    padding-bottom: 16px;
     margin-bottom: 34px;
 
     list-style-type: none;
@@ -455,8 +459,6 @@ img {
 }
 
 .project-name {
-    margin-top: 20px;
-
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
