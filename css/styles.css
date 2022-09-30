@@ -52,7 +52,8 @@ img {
 }
 
 .header > .container,
-.team > .container {
+.team > .container
+.footer > .container {
     margin-bottom: 0px;
 }
 
@@ -316,14 +317,8 @@ img {
 /* Футер */
 
 .footer {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 0px;
     padding-top: 60px;
     padding-bottom: 60px;
-
 
     background-color: var(--footer-background-color);
 }
@@ -392,7 +387,7 @@ img {
 .filter-list {
     display: flex;
     justify-content: center;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 
     list-style-type: none;
 }
